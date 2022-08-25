@@ -1,0 +1,75 @@
+@import 'global';
+@import 'vars';
+
+.header {
+  @include md-block() {
+    padding-left: 10px;
+  }
+  padding: 30px 0;
+  height: 120px;
+  position: static;
+  &-logo {
+    &__title {
+      color: $gray-dark;
+    }
+    &__subtitle {
+      color: $black;
+    }
+  }
+}
+
+.nav {
+  @include md-block() {
+    padding-right: 20px;
+  }
+  &-menu__item {
+    &-link {
+      color: $gray-dark;
+  }
+  }
+}
+
+.nav-menu__item-link.active {
+  color: $gray-dark;
+}
+
+.friends {
+  &-items {
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    margin-bottom: 60px;
+  @include md-block() {
+    justify-content: center;
+  }
+  }
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  &-arrow {
+    // background: tr;
+    &__disabled {
+      border: 2px solid $gray;
+      background: transparent;
+      &:hover {
+        background: transparent;
+        cursor: auto;
+      }
+    }
+    &__number {
+      background: $pink;
+    }
+  }
+}
+
+.footer{
+  @include md-block() {
+    height: auto;
+  }
+  &-wrapper {
+    @include md-block() {
+      flex-direction: column;
+    }
+  }
+}

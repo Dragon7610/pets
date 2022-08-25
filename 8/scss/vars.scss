@@ -1,0 +1,30 @@
+$georgia: 'Georgia', sans-serif;
+$arial: 'Arial', sans-serif;
+
+$pink: #F1CDB3;
+$white: #FFFFFF;
+$gray: #CDCDCD;
+$black: #292929;
+$gray-dark: #545454;
+$black-light: #4C4C4C;
+$gray-light: #F6F6F6;
+
+
+@mixin md-block() {
+  @media screen and (max-width: 991px) {
+    @content;
+  } 
+}
+
+@mixin sm-block() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin xs-block() {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
